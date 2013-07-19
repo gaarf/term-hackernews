@@ -1,0 +1,28 @@
+{
+  "name": "term-hackernews",
+  "version": "0.0.1",
+  "description": "Command line reader for Hacker News",
+  "main": "newsyc.js",
+  "dependencies": {
+    "hn.js": "~0.2.0",
+    "term-list": "~0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gaarf/term-hackernews.git"
+  },
+  "keywords": [
+    "terminal",
+    "hacker",
+    "news"
+  ],
+  "author": "Gaarf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaarf/term-hackernews/issues"
+  }
+}
