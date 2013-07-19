@@ -1,8 +1,7 @@
-var List = require('term-list');
-var exec = require('child_process').exec;
-
-var list = new List({ marker: '\033[36m› \033[0m', markerLength: 2 });
-
+var List = require('term-list')
+  , list = new List({ marker: '\033[36m› \033[0m', markerLength: 2 })
+  , exec = require('child_process').exec
+  , news = {};
 
 list.on('keypress', function(key, item){
   var url;
@@ -17,8 +16,6 @@ list.on('keypress', function(key, item){
       process.exit();
   }
 });
-
-var news = {};
 
 console.log("Fetching news...");
 
