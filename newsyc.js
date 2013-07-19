@@ -6,7 +6,9 @@ var List = require('term-list')
 list.on('keypress', function(key, item){
   var url;
   switch (key.name) {
+
     case 'j':
+    case 'tab':
       list.down();
       break;
 
@@ -20,10 +22,14 @@ list.on('keypress', function(key, item){
     case 'h':
     case 'space':
       url = url || 'https://news.ycombinator.com/item?id='+item;
+
       list.stop();
       console.log('opening %s ...', url);
       exec('open "' + url + '"');
-      setTimeout(list.start.bind(list), 2000);
+
+      setTimeout(function() {
+        list.start();
+      }, 2000);
       break;
 
     case 'q':
@@ -33,6 +39,7 @@ list.on('keypress', function(key, item){
       process.exit();
   }
 });
+
 
 console.log("Fetching news...");
 

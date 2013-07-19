@@ -1,11 +1,11 @@
 {
   "name": "term-hackernews",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Command line reader for Hacker News",
   "main": "newsyc.js",
   "dependencies": {
     "hn.js": "~0.2.0",
-    "term-list": "~0.1.0"
+    "term-list": "git://github.com/gaarf/node-term-list.git#patch-1"
   },
   "devDependencies": {},
   "scripts": {
