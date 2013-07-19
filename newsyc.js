@@ -7,11 +7,11 @@ list.on('keypress', function(key, item){
   var url;
   switch (key.name) {
     case 'j':
-      list.up();
+      list.down();
       break;
 
     case 'k':
-      list.down();
+      list.up();
       break;
 
     case 'l':
@@ -28,6 +28,7 @@ list.on('keypress', function(key, item){
 
     case 'q':
     case 'c':
+    case 'escape':
       list.stop();
       process.exit();
   }
