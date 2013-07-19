@@ -1,7 +1,7 @@
 term-hackernews
 ===============
 
-Command line reader for [Hacker News](https://news.ycombinator.com/)
+Command line reader for [Hacker News](https://news.ycombinator.com/) using [node-term-list](https://github.com/visionmedia/node-term-list)
 
 
 ## run it
@@ -10,6 +10,7 @@ Command line reader for [Hacker News](https://news.ycombinator.com/)
 
 ## use it
 
- * use the arrow keys to navigate
+ * up/down arrow keys to navigate
  * `return` opens the article
  * `space` opens the comment page
+ * `q` to exit

@@ -10,10 +10,15 @@ list.on('keypress', function(key, item){
       url = news[item].url;
     case 'space':
       url = url || 'https://news.ycombinator.com/item?id='+item;
-      list.stop();
       exec('open ' + url);
       console.log('opening %s', url);
+    case 'q':
+    case 'c':
+      list.stop();
       process.exit();
+      break;
+    default:
+      list.draw();
   }
 });
 
