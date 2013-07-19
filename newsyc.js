@@ -6,12 +6,26 @@ var List = require('term-list')
 list.on('keypress', function(key, item){
   var url;
   switch (key.name) {
+    case 'j':
+      list.up();
+      break;
+
+    case 'k':
+      list.down();
+      break;
+
+    case 'l':
     case 'return':
       url = news[item].url;
+    case 'h':
     case 'space':
       url = url || 'https://news.ycombinator.com/item?id='+item;
-      exec('open ' + url);
-      console.log('opening %s', url);
+      list.stop();
+      console.log('opening %s ...', url);
+      exec('open "' + url + '"');
+      setTimeout(list.start.bind(list), 2000);
+      break;
+
     case 'q':
     case 'c':
       list.stop();
