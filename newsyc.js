@@ -16,9 +16,6 @@ list.on('keypress', function(key, item){
     case 'c':
       list.stop();
       process.exit();
-      break;
-    default:
-      list.draw();
   }
 });
 
