@@ -3,6 +3,7 @@ term-hackernews
 
 Command line reader for [Hacker News](https://news.ycombinator.com/) using [node-term-list](https://github.com/visionmedia/node-term-list)
 
+![screenshot](https://pbs.twimg.com/media/BPwDPOTCIAAzPgc.png:large)
 
 ## install it
 
@@ -18,3 +19,5 @@ Command line reader for [Hacker News](https://news.ycombinator.com/) using [node
  * `return` or `l` opens the article
  * `space` or `h` opens the comment page
  * `escape` or `q` to exit
+
+
