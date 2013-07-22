@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var List = require('term-list')
   , list = new List({ marker: '\033[36m› \033[0m', markerLength: 2 })
   , exec = require('child_process').exec
@@ -6,16 +8,6 @@ var List = require('term-list')
 list.on('keypress', function(key, item){
   var url;
   switch (key.name) {
-
-    case 'j':
-    case 'tab':
-      list.down();
-      break;
-
-    case 'k':
-      list.up();
-      break;
-
     case 'l':
     case 'return':
       url = news[item].url;
