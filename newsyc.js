@@ -36,7 +36,11 @@ list.on('keypress', function(key, item){
 console.log("Fetching news...");
 
 require("hn.js").home(function(err, items) {
-  if(err) return console.error(err);
+  if(err || !items.length) {
+    console.error(err || "HN is probably down :-(");
+    process.exit(1);
+    return;
+  }
 
   items.forEach(function(o){
     news[o.id] = o;
