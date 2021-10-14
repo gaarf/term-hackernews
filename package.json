@@ -1,17 +1,17 @@
 {
   "name": "term-hackernews",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Command line reader for Hacker News",
   "main": "newsyc.js",
   "bin": {
     "newsyc": "newsyc.js"
   },
   "dependencies": {
-    "hn.js": "~0.2.0",
-    "term-list": "~0.2.0"
+    "node-fetch": "^3.0.0",
+    "term-list": "0.2.1"
   },
-  "devDependencies": {},
   "scripts": {
+    "start": "node newsyc.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
